@@ -17,3 +17,5 @@ https://jhooq.com/kubespray-12-steps-for-installing-a-production-ready-kubernete
 ## After Installation
 ![Build Status](https://github.com/mostafahassan097/K8s-local/blob/main/Imgs/2.png)
 ![Build Status](https://github.com/mostafahassan097/K8s-local/blob/main/Imgs/3.png)
+![Build Status](https://github.com/mostafahassan097/K8s-local/blob/main/Imgs/4.png)
+![Build Status](https://github.com/mostafahassan097/K8s-local/blob/main/Imgs/5.png)
