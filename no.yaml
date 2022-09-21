@@ -1,0 +1,54 @@
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;45r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[45;1H"/tmp/kubectl-edit-3641650679.yaml" 134 lines, 5474 characters[1;1H# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  annotations:
+    deprecated.daemonset.template.generation: "1"
+    kubectl.kubernetes.io/last-applied-configuration: |[11;7H{"apiVersion":"apps/v1","kind":"DaemonSet","metadata":{"annotations":{},"labels":{"addonmanager.kubernetes.io/mode":"Reconcile","k8s-app":"kube-dns"},"name":"nodelocaldns","namespace"::[12;1H"kube-system"},"spec":{"selector":{"matchLabels":{"k8s-app":"nodelocaldns"}},"template":{"metadata":{"annotations":{"prometheus.io/port":"9253","prometheus.io/scrape":"true"},"labels":{"k8s--[13;1Happ":"nodelocaldns"}},"spec":{"containers":[{"args":["-localip","169.254.25.10","-conf","/etc/coredns/Corefile","-upstreamsvc","coredns"],"image":"registry.k8s.io/dns/k8s-dns-node-cache:1.211[14;1H.1","livenessProbe":{"failureThreshold":10,"httpGet":{"host":"169.254.25.10","path":"/health","port":9254,"scheme":"HTTP"},"successThreshold":1,"timeoutSeconds":5},"name":"node-cache","portss[15;1H":[{"containerPort":53,"name":"dns","protocol":"UDP"},{"containerPort":53,"name":"dns-tcp","protocol":"TCP"},{"containerPort":9253,"name":"metrics","protocol":"TCP"}],"readinessProbe":{"faill[16;1HureThreshold":10,"httpGet":{"host":"169.254.25.10","path":"/health","port":9254,"scheme":"HTTP"},"successThreshold":1,"timeoutSeconds":5},"resources":{"limits":{"memory":"200Mi"},"requests"::[17;1H{"cpu":"100m","memory":"70Mi"}},"securityContext":{"privileged":true},"volumeMounts":[{"mountPath":"/etc/coredns","name":"config-volume"},{"mountPath":"/run/xtables.lock","name":"xtables-locc[18;1Hk"}]}],"dnsPolicy":"Default","hostNetwork":true,"nodeSelector":{"kubernetes.io/os":"linux"},"priorityClassName":"system-cluster-critical","serviceAccountName":"nodelocaldns","terminationGracc[19;1HePeriodSeconds":0,"tolerations":[{"effect":"NoSchedule","operator":"Exists"},{"effect":"NoExecute","operator":"Exists"}],"volumes":[{"configMap":{"items":[{"key":"Corefile","path":"Corefile""[20;1H}],"name":"nodelocaldns"},"name":"config-volume"},{"hostPath":{"path":"/run/xtables.lock","type":"FileOrCreate"},"name":"xtables-lock"}]}},"updateStrategy":{"rollingUpdate":{"maxUnavailable""[21;1H:"20%"},"type":"RollingUpdate"}}}
+  creationTimestamp: "2022-09-19T01:42:24Z"
+  generation: 1
+  labels:
+    addonmanager.kubernetes.io/mode: Reconcile
+    k8s-app: kube-dns
+  name: nodelocaldns
+  namespace: kube-system
+  resourceVersion: "41799"
+  uid: c07dabde-1c43-41e0-8753-c032cf4455ea
+spec:
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:[35;7Hk8s-app: nodelocaldns
+  template:
+    metadata:[38;7Hannotations:[39;9Hprometheus.io/port: "9253"[40;9Hprometheus.io/scrape: "true"[41;7HcreationTimestamp: null[42;7Hlabels:[43;9Hk8s-app: nodelocaldns
+    spec:[1;1H[?25h[45;1H
+[?2004l[?1l>[>4;m[?1049l[23;0;0t[?25h[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?12h[?12l[27m[23m[29m[m[H[2J[?25l[1;1H# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  annotations:
+    deprecated.daemonset.template.generation: "1"
+    kubectl.kubernetes.io/last-applied-configuration: |[11;7H{"apiVersion":"apps/v1","kind":"DaemonSet","metadata":{"annotations":{},"labels":{"addonmanager.kubernetes.io/mode":"Reconcile","k8s-app":"kube-dns"},"name":"nodelocaldns","namespace"::[12;1H"kube-system"},"spec":{"selector":{"matchLabels":{"k8s-app":"nodelocaldns"}},"template":{"metadata":{"annotations":{"prometheus.io/port":"9253","prometheus.io/scrape":"true"},"labels":{"k8s--[13;1Happ":"nodelocaldns"}},"spec":{"containers":[{"args":["-localip","169.254.25.10","-conf","/etc/coredns/Corefile","-upstreamsvc","coredns"],"image":"registry.k8s.io/dns/k8s-dns-node-cache:1.211[14;1H.1","livenessProbe":{"failureThreshold":10,"httpGet":{"host":"169.254.25.10","path":"/health","port":9254,"scheme":"HTTP"},"successThreshold":1,"timeoutSeconds":5},"name":"node-cache","portss[15;1H":[{"containerPort":53,"name":"dns","protocol":"UDP"},{"containerPort":53,"name":"dns-tcp","protocol":"TCP"},{"containerPort":9253,"name":"metrics","protocol":"TCP"}],"readinessProbe":{"faill[16;1HureThreshold":10,"httpGet":{"host":"169.254.25.10","path":"/health","port":9254,"scheme":"HTTP"},"successThreshold":1,"timeoutSeconds":5},"resources":{"limits":{"memory":"200Mi"},"requests"::[17;1H{"cpu":"100m","memory":"70Mi"}},"securityContext":{"privileged":true},"volumeMounts":[{"mountPath":"/etc/coredns","name":"config-volume"},{"mountPath":"/run/xtables.lock","name":"xtables-locc[18;1Hk"}]}],"dnsPolicy":"Default","hostNetwork":true,"nodeSelector":{"kubernetes.io/os":"linux"},"priorityClassName":"system-cluster-critical","serviceAccountName":"nodelocaldns","terminationGracc[19;1HePeriodSeconds":0,"tolerations":[{"effect":"NoSchedule","operator":"Exists"},{"effect":"NoExecute","operator":"Exists"}],"volumes":[{"configMap":{"items":[{"key":"Corefile","path":"Corefile""[20;1H}],"name":"nodelocaldns"},"name":"config-volume"},{"hostPath":{"path":"/run/xtables.lock","type":"FileOrCreate"},"name":"xtables-lock"}]}},"updateStrategy":{"rollingUpdate":{"maxUnavailable""[21;1H:"20%"},"type":"RollingUpdate"}}}
+  creationTimestamp: "2022-09-19T01:42:24Z"
+  generation: 1
+  labels:
+    addonmanager.kubernetes.io/mode: Reconcile
+    k8s-app: kube-dns
+  name: nodelocaldns
+  namespace: kube-system
+  resourceVersion: "41799"
+  uid: c07dabde-1c43-41e0-8753-c032cf4455ea
+spec:
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:[35;7Hk8s-app: nodelocaldns
+  template:
+    metadata:[38;7Hannotations:[39;9Hprometheus.io/port: "9253"[40;9Hprometheus.io/scrape: "true"[41;7HcreationTimestamp: null[42;7Hlabels:[43;9Hk8s-app: nodelocaldns
+    spec:[1;1H[?25h[45;1H[?2004l[?1l>[>4;m[?1049l[23;0;0tVim: Caught deadly signal HUP
+Vim: Finished.
+[45;1H
