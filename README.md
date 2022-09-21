@@ -1,5 +1,5 @@
 # K8s-local
-# To Install Cluster Environment on Prem
+# To Install Cluster on Prem Environment 
 ## Requirenments
 ### - Virtualbox
 ### - Vagrant
