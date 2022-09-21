@@ -1,6 +1,6 @@
 # K8s-local
 # To Install Cluster on Prem Environment 
-## Requirenments
+## Requirements
 ### - Virtualbox
 ### - Vagrant
 ### - Ansible 
