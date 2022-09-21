@@ -7,7 +7,7 @@
 # 1- Proviosion 3 VMs Using Vagrant One Master and Two Worker Nodes
 ![Build Status](https://github.com/mostafahassan097/K8s-local/blob/main/Imgs/1.png)
 
-# Use Thees Guides for installing Kubespary On Prem
+# Follow These Guides for Installing Kubespary On Prem
 https://adamtheautomator.com/kubespray/#Generating_the_Ansible_Inventory_List
 
 https://computingforgeeks.com/deploy-kubernetes-cluster-centos-kubespray/
